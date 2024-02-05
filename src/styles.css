@@ -1,37 +1,35 @@
 /* styles.css */
 
 :host {
-    display: block;
-    width: 75%;
-    margin: 0 auto;
-  }
-  
-  input {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  button {
-    padding: 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
 
+input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
 
+button {
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 
 .results-container {
   display: flex;
@@ -40,8 +38,8 @@
 
 .drink-item {
   border: 1px solid #ddd;
-  margin: 0.625rem; 
-  padding: 0.625rem; 
+  margin: 0.625rem;
+  padding: 0.625rem;
   width: 48%;
   box-sizing: border-box;
   position: relative;
@@ -53,30 +51,35 @@
 }
 
 .drink-details {
-  padding-left: 0.625rem; 
+  padding-left: 0.625rem;
 }
 
 .drink-details h3 {
-  margin-bottom: 0.625rem; 
+  margin-bottom: 0.625rem;
 }
 
 .drink-other-details {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.625rem; 
+  margin-bottom: 0.625rem;
 }
 
 .action-button {
   position: absolute;
-  bottom: 0.625rem; 
-  right: 0.625rem; 
-  padding: 0.5rem 0.75rem; 
-  background-color: #4CAF50;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
 }
 
 .action-button:hover {
   background-color: #45a049;
 }
+
+#searchPage {
+  width: 800px;
+}
+

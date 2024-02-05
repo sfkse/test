@@ -1,15 +1,17 @@
-import { html } from 'lit-html';
-import { component } from 'haunted';
-import { useShoppingList } from '../../../context/shoppingListContext';
+import { html } from "lit-html";
+import { component } from "haunted";
+// import { useShoppingList } from "../../../context/shoppingListContext.js";
 
 const ShoppingList = () => {
-  const { state, dispatch } = useShoppingList();
+  // const { state, dispatch } = useShoppingList();
 
   const handleClearCart = () => {
-    dispatch({ type: 'CLEAR_CART' });
+    dispatch({ type: "CLEAR_CART" });
   };
 
-  const uniqueIngredients = Array.from(new Set(state.selectedDrinks.flatMap((drink) => drink.ingredients || [])));
+  const uniqueIngredients = Array.from(
+    new Set(state.selectedDrinks.flatMap((drink) => drink.ingredients || []))
+  );
 
   return html`
     <div class="shopping-list">
@@ -22,4 +24,5 @@ const ShoppingList = () => {
   `;
 };
 
-customElements.define('shopping-element', component(ShoppingList));
+customElements.define("shopping-element", component(ShoppingList));
+

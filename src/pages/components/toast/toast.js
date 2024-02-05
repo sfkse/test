@@ -1,12 +1,10 @@
-import { html, render } from 'lit-html';
-import { useState, component, useEffect } from 'haunted';
+import { html, render } from "lit-html";
+import { useState, component, useEffect } from "haunted";
 
-const Toast = () => {
-  return html`
-      <div>
-        toast
-      </div>
-    `;
+const Toast = ({ showToast, message }) => {
+  console.log(showToast, message);
+  return showToast ? html` <div>${message}</div> ` : null;
 };
 
-customElements.define('toast-element', component(Toast));
+customElements.define("toast-element", component(Toast));
+

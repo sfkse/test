@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@lit/context": "^1.1.0",
     "haunted": "^5.0.0",
     "lit": "^3.0.0",
     "lit-html": "^3.1.2"

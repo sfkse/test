@@ -1,16 +1,10 @@
-import { html, render } from 'lit-html';
-import { useState, component, useEffect } from 'haunted';
-import './pages/page.js';
-import { ShoppingListProvider } from './context/shoppingListContext.js';
+import { html, render } from "lit-html";
+import { component } from "haunted";
+import "./pages/page.js";
+import "./context/shoppingListContext";
 
 const App = () => {
-
-
-  return html`
-  <${ShoppingListProvider}>
-    <page-element></page-element>
-    <//>
-  `;
+  return html`<page-element></page-element>`;
 };
+customElements.define("app-element", component(App));
 
-customElements.define('app-element', component(App));
